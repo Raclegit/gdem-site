@@ -1,0 +1,102 @@
+:root{
+  --vert:#0f5132;--vert-fonce:#0a3622;--vert-clair:#1d7a4d;
+  --or:#c9a227;--or-clair:#f0d77a;--ivoire:#fbfaf4;--texte:#1d2b24;--gris:#5c6b63;
+  --rayon:20px;--ombre:0 10px 30px rgba(10,54,34,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--texte);background:var(--ivoire);line-height:1.6;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.2;color:var(--vert-fonce)}
+a{color:inherit}
+.wrap{width:min(1080px,100% - 32px);margin-inline:auto}
+
+/* En-tête */
+header.site{position:sticky;top:0;z-index:50;background:rgba(10,54,34,.97);backdrop-filter:blur(6px);border-bottom:2px solid var(--or)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px;flex-wrap:wrap}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:700;letter-spacing:.04em}
+.marque img{width:42px;height:42px;border-radius:50%;object-fit:cover;object-position:center 35%;background:#fff;border:2px solid var(--or)}
+nav.principal{display:flex;gap:6px;flex-wrap:wrap}
+nav.principal a{color:#fff;text-decoration:none;font-size:.92rem;font-weight:600;padding:8px 14px;border-radius:999px;border:1px solid transparent}
+nav.principal a:hover{border-color:var(--or)}
+nav.principal a[aria-current="page"]{background:var(--or);color:var(--vert-fonce)}
+
+/* Héros */
+.hero{background:radial-gradient(1200px 500px at 85% -10%,rgba(201,162,39,.25),transparent 60%),linear-gradient(160deg,var(--vert-fonce),var(--vert) 70%);color:#fff;padding:56px 0 72px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2rem,5.2vw,3.4rem)}
+.hero h1 em{color:var(--or-clair);font-style:italic}
+.hero p.lead{margin:18px 0 26px;font-size:1.1rem;color:#e6efe9;max-width:56ch}
+.hero .en{font-family:'Playfair Display',serif;font-style:italic;color:var(--or-clair);margin-top:14px;font-size:.98rem}
+.carte-logo{background:#fff;border-radius:28px;padding:18px;box-shadow:0 20px 50px rgba(0,0,0,.35);border:3px solid var(--or);max-width:380px;justify-self:center}
+.carte-logo img{width:100%;height:auto;display:block;border-radius:16px}
+.hero-page{padding:44px 0 52px}
+.hero-page .wrap{display:block}
+.pastille{display:inline-block;background:linear-gradient(90deg,var(--or),var(--or-clair));color:var(--vert-fonce);font-weight:800;letter-spacing:.06em;font-size:.78rem;padding:6px 14px;border-radius:999px;margin-bottom:14px;text-transform:uppercase}
+
+/* Boutons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;font-size:1rem;transition:transform .15s,box-shadow .15s;cursor:pointer;min-height:48px}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.btn-or{background:linear-gradient(90deg,var(--or),var(--or-clair));color:var(--vert-fonce)}
+.btn-vert{background:var(--vert);color:#fff}
+.btn-contour{border-color:var(--or);color:#fff;background:transparent}
+.btn-wa{background:#1fa855;color:#fff}
+.groupe-btn{display:flex;flex-wrap:wrap;gap:12px}
+
+/* Sections */
+section.bloc{padding:60px 0}
+section.bloc.alt{background:#fff;border-block:1px solid #eadfb7}
+.titre-section{text-align:center;max-width:720px;margin:0 auto 34px}
+.titre-section h2{font-size:clamp(1.6rem,3.6vw,2.3rem)}
+.titre-section p{color:var(--gris);margin-top:10px}
+.filet{width:70px;height:4px;border-radius:4px;background:var(--or);margin:14px auto 0}
+
+.grille{display:grid;gap:18px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g5{grid-template-columns:repeat(5,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.carte{background:#fff;border:1px solid #eadfb7;border-radius:var(--rayon);padding:24px;box-shadow:var(--ombre);position:relative}
+.carte h3{font-size:1.15rem;margin-bottom:8px}
+.carte p{color:var(--gris);font-size:.98rem}
+.carte .num{position:absolute;top:-14px;left:20px;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--or),var(--or-clair));color:var(--vert-fonce);font-weight:800;display:grid;place-items:center;box-shadow:0 4px 10px rgba(0,0,0,.2)}
+.carte .art{display:inline-block;margin-top:10px;font-size:.75rem;font-weight:700;color:var(--or);letter-spacing:.05em}
+.icone{font-size:1.8rem;margin-bottom:8px}
+.secteur{text-align:center;padding:20px 12px}
+.secteur .icone{font-size:2.2rem}
+.secteur h3{font-size:1rem}
+
+.bandeau{background:linear-gradient(100deg,var(--vert-fonce),var(--vert));color:#fff;border-radius:var(--rayon);padding:26px 30px;border:2px solid var(--or);text-align:center}
+.bandeau strong{display:block;font-family:'Playfair Display',serif;font-size:clamp(1.2rem,3vw,1.7rem);color:var(--or-clair)}
+.bandeau span{font-style:italic;color:#d6e6dc;font-size:.95rem}
+
+/* Contact */
+.contact-carte{background:#fff;border:2px solid var(--or);border-radius:24px;padding:28px;box-shadow:var(--ombre);text-align:center}
+.contact-carte h3{font-size:1.3rem}
+.contact-carte .tel{font-size:1.35rem;font-weight:800;color:var(--vert);margin:10px 0 16px;letter-spacing:.02em}
+.contact-carte .tel a{text-decoration:none}
+.contact-carte .groupe-btn{justify-content:center;flex-direction:column;align-items:stretch}
+.contact-carte .btn{justify-content:center}
+.note{font-size:.85rem;color:var(--gris);text-align:center;margin-top:18px}
+.liste-ok{list-style:none;display:grid;gap:10px;max-width:760px;margin:0 auto}
+.liste-ok li{background:#fff;border:1px solid #eadfb7;border-left:5px solid var(--or);border-radius:12px;padding:14px 18px}
+.liste-ok b{color:var(--vert)}
+
+footer.site{background:var(--vert-fonce);color:#cfe0d6;padding:30px 0;border-top:3px solid var(--or);text-align:center;font-size:.9rem}
+footer.site .devise{font-family:'Playfair Display',serif;font-style:italic;color:var(--or-clair);font-size:1.1rem;margin-bottom:6px}
+footer.site small{display:block;margin-top:8px;opacity:.8}
+
+/* Barre d'appel flottante (mobile) */
+.barre-appel{display:none}
+
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .carte-logo{max-width:280px;order:-1}
+  .g3,.g2{grid-template-columns:1fr}
+  .g5{grid-template-columns:repeat(2,1fr)}
+  section.bloc{padding:44px 0}
+  .barre-appel{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--vert-fonce);border-top:2px solid var(--or);padding:8px 12px;gap:8px}
+  .barre-appel a{flex:1;text-align:center;padding:12px 8px;border-radius:999px;font-weight:700;text-decoration:none;font-size:.9rem}
+  .barre-appel .b1{background:linear-gradient(90deg,var(--or),var(--or-clair));color:var(--vert-fonce)}
+  .barre-appel .b2{background:#1fa855;color:#fff}
+  body{padding-bottom:66px}
+}
+@media (max-width:480px){.g5{grid-template-columns:1fr}.btn{width:100%;justify-content:center}}
