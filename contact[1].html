@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact et investisseurs – GDEM</title>
+<meta name="description" content="Investisseurs et partenaires : rejoignez le GDEM. Écrivez-nous, appelez-nous ou contactez-nous sur WhatsApp.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="marque" href="index.html"><img src="assets/logo-gdem.jpg" alt="Logo GDEM"><span>GDEM</span></a>
+    <nav class="principal" aria-label="Navigation principale">
+      <a href="index.html">Présentation</a>
+      <a href="adhesion.html">Adhésion &amp; gouvernance</a>
+      <a href="contact.html" aria-current="page">Contact &amp; investisseurs</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero hero-page">
+    <div class="wrap">
+      <span class="pastille">Appel aux investisseurs</span>
+      <h1>Investissez dans <em>l'entrepreneuriat malgache</em></h1>
+      <p class="lead">Partenaires, investisseurs, entrepreneurs de la diaspora : le GDEM cherche des alliés pour développer des projets dans cinq secteurs porteurs. Un clic suffit pour nous écrire ou nous appeler.</p>
+      <div class="groupe-btn">
+        <a class="btn btn-or" href="#paiement">Contribuer ou investir</a>
+        <a class="btn btn-contour" href="#contacts">Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloc">
+    <div class="wrap">
+      <div class="titre-section">
+        <h2>Pourquoi s'associer au GDEM ?</h2>
+        <div class="filet"></div>
+      </div>
+      <div class="grille g3">
+        <article class="carte"><div class="icone" aria-hidden="true">🤝</div><h3>Un réseau solide</h3><p>Un groupement d'entrepreneurs malgaches, d'ici et d'ailleurs, structuré par des statuts et un règlement.</p></article>
+        <article class="carte"><div class="icone" aria-hidden="true">🌍</div><h3>Cinq secteurs porteurs</h3><p>Agriculture et élevage, industrie et artisanat, commerce et distribution, services et numérique, tourisme et culture.</p></article>
+        <article class="carte"><div class="icone" aria-hidden="true">🔎</div><h3>Transparence</h3><p>Double signature, commission de contrôle, comptabilité justifiée, achats mis en concurrence.</p></article>
+      </div>
+      <p class="note" style="max-width:720px;margin-inline:auto">Le GDEM est une association à but non lucratif : aucun excédent n'est distribué aux membres ni aux dirigeants. Les modalités de tout partenariat se discutent directement avec le bureau.</p>
+    </div>
+  </section>
+
+  <section class="bloc alt" id="paiement">
+    <div class="wrap">
+      <div class="titre-section">
+        <h2>Contribuer ou investir en toute sécurité</h2>
+        <div class="filet"></div>
+        <p>Un parcours en trois temps : vous déclarez votre intention, le bureau vous répond avec une référence et une convention, puis vous réglez sur un canal officiel.</p>
+      </div>
+
+      <div class="alerte"><b>Sécurité :</b> les canaux ci-dessous sont les seuls canaux officiels de paiement du GDEM. Ne versez jamais d'argent sur un autre numéro ou lien, même si le message semble venir de nous : en cas de doute, appelez l'un des deux contacts de cette page.</div>
+
+      <div class="canaux" id="canaux">
+        <div class="canal" style="grid-column:1/-1;text-align:center">
+          <h3>Canaux de paiement en cours d'ouverture</h3>
+          <p>Les liens officiels (mobile money, carte bancaire, virement) seront publiés ici dès leur validation par le bureau. En attendant, déclarez votre intention ci-dessous ou contactez-nous directement.</p>
+        </div>
+      </div>
+
+      <form class="formulaire" id="form-intention" novalidate>
+        <h3>1. Déclarer mon intention</h3>
+        <p class="sous">Ce formulaire n'est ni un paiement ni un engagement. Il génère une référence unique à rappeler dans votre règlement, et prévient le GDEM par e-mail.</p>
+        <div class="champs">
+          <div class="champ"><label for="f-nom">Nom et prénom *</label><input id="f-nom" name="nom" autocomplete="name" required></div>
+          <div class="champ"><label for="f-org">Entreprise ou organisation</label><input id="f-org" name="org" autocomplete="organization"></div>
+          <div class="champ"><label for="f-tel">Téléphone (avec indicatif)</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" placeholder="+33 … / +261 …"></div>
+          <div class="champ"><label for="f-nature">Nature de l'opération *</label>
+            <select id="f-nature" name="nature" required>
+              <option value="">Choisir…</option>
+              <option>Don ou contribution à la mission</option>
+              <option>Partenariat ou sponsoring (facture)</option>
+              <option>Investissement ou prêt (convention à établir)</option>
+              <option>Droit d'adhésion et cotisation (membre)</option>
+              <option>Autre (à préciser)</option>
+            </select></div>
+          <div class="champ"><label for="f-montant">Montant indicatif</label>
+            <div class="ligne-montant">
+              <input id="f-montant" name="montant" inputmode="decimal" placeholder="Ex. 500">
+              <select id="f-devise" name="devise" aria-label="Devise"><option>EUR</option><option>USD</option><option>MGA</option></select>
+            </div></div>
+          <div class="champ plein"><label for="f-msg">Votre projet ou message</label><textarea id="f-msg" name="msg" rows="3"></textarea></div>
+        </div>
+        <p style="margin-top:16px"><button class="btn btn-or" type="submit">Générer ma référence et prévenir le GDEM</button></p>
+        <div class="ref-box" id="ref-box" role="status" aria-live="polite">
+          <p>Votre référence à rappeler dans tout règlement :</p>
+          <div class="ref" id="ref-val"></div>
+          <div class="groupe-btn" style="justify-content:center">
+            <button class="btn btn-contour" type="button" id="ref-copier">Copier la référence</button>
+            <a class="btn btn-or" id="ref-mail" href="#">✉️ Ouvrir l'e-mail à envoyer</a>
+          </div>
+          <p style="margin-top:10px">2. Le bureau vous répond avec une convention ou une facture. 3. Vous réglez sur un canal officiel en indiquant cette référence.</p>
+        </div>
+      </form>
+      <p class="note" style="max-width:760px;margin-inline:auto">Le GDEM est une association à but non lucratif : les sommes reçues ne donnent lieu à aucune distribution d'excédents. Tout investissement ou prêt à rendement fait l'objet d'une convention écrite distincte, validée par le bureau. Chaque somme reçue est justifiée, comptabilisée et contrôlée.</p>
+    </div>
+  </section>
+
+  <section class="bloc" id="contacts">
+    <div class="wrap">
+      <div class="titre-section">
+        <h2>Contactez-nous directement</h2>
+        <div class="filet"></div>
+        <p>Écrivez par e-mail, appelez, ou envoyez un message WhatsApp. Ces canaux sont destinés aux bailleurs potentiels et aux partenaires financiers et techniques.</p>
+      </div>
+      <div class="grille g2">
+
+        <article class="contact-carte">
+          <h3>Contact n°1</h3>
+          <div class="tel"><a href="tel:+212622699131">+212 622 699 131</a></div>
+          <div class="groupe-btn">
+            <a class="btn btn-or" href="mailto:gdem2027@gmail.com?subject=Investisseur%20-%20Prise%20de%20contact%20GDEM&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20en%20savoir%20plus%20sur%20les%20opportunit%C3%A9s%20d%27investissement%20avec%20le%20GDEM.%0A%0ANom%20%3A%0AEntreprise%20%2F%20Organisation%20%3A%0AT%C3%A9l%C3%A9phone%20%3A%0A%0ACordialement">✉️ Écrire un e-mail</a>
+            <a class="btn btn-vert" href="tel:+212622699131">📞 Appeler directement</a>
+            <a class="btn btn-wa" href="https://wa.me/212622699131?text=Bonjour%2C%20je%20suis%20bailleur%20ou%20partenaire%20potentiel%20et%20je%20souhaite%20en%20savoir%20plus%20sur%20le%20GDEM." rel="noopener">💬 WhatsApp bailleurs &amp; partenaires</a>
+          </div>
+        </article>
+
+        <article class="contact-carte">
+          <h3>Contact n°2</h3>
+          <div class="tel"><a href="tel:+33650333216">+33 6 50 33 32 16</a></div>
+          <div class="groupe-btn">
+            <a class="btn btn-vert appel-secours" href="tel:+33650333216" data-wa="https://wa.me/33650333216?text=Bonjour%2C%20je%20vous%20ai%20appel%C3%A9%20sans%20r%C3%A9ponse.%20Je%20suis%20bailleur%20ou%20partenaire%20potentiel%20et%20je%20souhaite%20en%20savoir%20plus%20sur%20le%20GDEM.">📞 Appeler directement</a>
+            <a class="btn btn-wa" href="https://wa.me/33650333216?text=Bonjour%2C%20je%20vous%20ai%20appel%C3%A9%20sans%20r%C3%A9ponse.%20Je%20suis%20bailleur%20ou%20partenaire%20potentiel%20et%20je%20souhaite%20en%20savoir%20plus%20sur%20le%20GDEM." rel="noopener">💬 Pas de réponse ? WhatsApp</a>
+          </div>
+          <p class="note" style="margin-top:10px">Si l'appel n'aboutit pas (réseau perturbé), écrivez-nous sur WhatsApp au même numéro : nous vous répondons par message.</p>
+          <div class="alerte-retour" role="status" aria-live="polite" hidden>
+            <b>Pas de réponse à votre appel ?</b> Basculez sur un message WhatsApp, nous vous répondrons dès que possible.
+            <p style="margin-top:10px"><a class="btn btn-wa" href="#" id="wa-retour" target="_blank" rel="noopener">💬 Envoyer un message WhatsApp</a></p>
+          </div>
+          <hr style="border:0;border-top:1px solid #eadfb7;margin:22px 0 18px">
+          <div class="pastille" style="margin-bottom:6px">Numéro local à Madagascar · WhatsApp Business</div>
+          <div class="tel"><a href="tel:+261331878950">+261 33 18 789 50</a></div>
+          <div class="groupe-btn">
+            <a class="btn btn-vert" href="tel:+261331878950">📞 Appeler à Madagascar</a>
+            <a class="btn btn-wa" href="https://wa.me/261331878950?text=Bonjour%2C%20je%20suis%20bailleur%20ou%20partenaire%20potentiel%20et%20je%20souhaite%20en%20savoir%20plus%20sur%20le%20GDEM." rel="noopener">💬 WhatsApp Business</a>
+          </div>
+          <hr style="border:0;border-top:1px solid #eadfb7;margin:22px 0 18px">
+          <div class="groupe-btn">
+            <a class="btn btn-or" href="mailto:racle394@gmail.com?subject=Investisseur%20-%20Prise%20de%20contact%20GDEM&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20en%20savoir%20plus%20sur%20les%20opportunit%C3%A9s%20d%27investissement%20avec%20le%20GDEM.%0A%0ANom%20%3A%0AEntreprise%20%2F%20Organisation%20%3A%0AT%C3%A9l%C3%A9phone%20%3A%0A%0ACordialement">✉️ Écrire un e-mail</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="note">Le bouton « Écrire un e-mail » ouvre votre messagerie avec un message pré-rempli.</p>
+      <div class="bandeau" style="margin-top:28px">
+        <strong>Vous êtes entrepreneur et souhaitez adhérer ?</strong>
+        <span>Le groupe WhatsApp ci-dessous est réservé à l'appel d'adhésion des membres.</span>
+        <p style="margin-top:14px"><a class="btn btn-wa" href="https://chat.whatsapp.com/DcXFPqYt7xx4uVfMq7KmKy" target="_blank" rel="noopener">💬 Rejoindre le groupe des membres</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bloc">
+    <div class="wrap">
+      <div class="bandeau">
+        <strong>Ensemble, bâtissons un entrepreneuriat solidaire.</strong>
+        <span>Together, we build supportive entrepreneurship.</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="devise">Ensemble, construisons des opportunités !</div>
+    <div>GDEM – Groupement des Entrepreneurs Malgaches</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // Repli automatique : au retour de l'appareil téléphone, proposer WhatsApp si l'appel n'a pas abouti
+  var btn=document.querySelector(".appel-secours"),box=document.querySelector(".alerte-retour"),link=document.getElementById("wa-retour");
+  if(!btn||!box) return;
+  var parti=false;
+  btn.addEventListener("click",function(){parti=true;link.setAttribute("href",btn.getAttribute("data-wa"))});
+  document.addEventListener("visibilitychange",function(){
+    if(document.visibilityState==="visible"&&parti){parti=false;box.hidden=false;box.scrollIntoView({block:"center",behavior:"smooth"})}
+  });
+  window.addEventListener("pageshow",function(e){if(parti&&e.persisted){parti=false;box.hidden=false}});
+})();
+</script>
+
+<script>
+(function(){
+  var MAILS="gdem2027@gmail.com,racle394@gmail.com";
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  function lien(u){return /^https:\/\//i.test(u)?u:""}
+
+  // Canaux officiels lus dans paiements.json (seuls les canaux renseignés s'affichent)
+  fetch("paiements.json",{cache:"no-cache"}).then(function(r){return r.json()}).then(function(cfg){
+    var html="";
+    (cfg.canaux||[]).forEach(function(c){
+      var u=lien(c.url||""); if(!u) return;
+      html+='<div class="canal"><span class="public">'+esc(c.public||"")+'</span><h3>'+esc(c.titre)+'</h3><p>'+esc(c.description||"")+'</p>'
+          +'<a class="btn btn-vert" href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">'+esc(c.bouton||"Payer")+'</a></div>';
+    });
+    var v=cfg.virement||{};
+    if(v.iban_ou_rib){
+      html+='<div class="canal"><span class="public">Montants importants</span><h3>Virement bancaire</h3><dl>'
+        +'<dt>Bénéficiaire</dt><dd>'+esc(v.beneficiaire||"")+'</dd><dt>Banque</dt><dd>'+esc(v.banque||"")+'</dd>'
+        +'<dt>IBAN / RIB</dt><dd>'+esc(v.iban_ou_rib)+'</dd><dt>BIC / SWIFT</dt><dd>'+esc(v.bic_swift||"")+'</dd></dl>'
+        +'<p>Indiquez votre référence GDEM en libellé.</p></div>';
+    }
+    if(html) document.getElementById("canaux").innerHTML=html;
+  }).catch(function(){});
+
+  // Référence unique + e-mail pré-rempli
+  var form=document.getElementById("form-intention");
+  function reference(){
+    var d=new Date(),a="ABCDEFGHJKLMNPQRSTUVWXYZ23456789",r="";
+    for(var i=0;i<4;i++) r+=a.charAt(Math.floor(Math.random()*a.length));
+    var p=function(n){return String(n).padStart(2,"0")};
+    return "GDEM-"+String(d.getFullYear()).slice(2)+p(d.getMonth()+1)+p(d.getDate())+"-"+r;
+  }
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var f=form.elements;
+    if(!f.nom.value.trim()||!f.nature.value){
+      (f.nom.value.trim()?f.nature:f.nom).focus();
+      alert("Merci de renseigner votre nom et la nature de l'opération.");return;
+    }
+    var ref=reference();
+    var corps=["Bonjour,","","Je souhaite être contacté(e) au sujet de l'opération suivante.","",
+      "Référence : "+ref,"Nom : "+f.nom.value.trim(),"Organisation : "+(f.org.value.trim()||"-"),
+      "Téléphone : "+(f.tel.value.trim()||"-"),"Nature : "+f.nature.value,
+      "Montant indicatif : "+(f.montant.value.trim()?f.montant.value.trim()+" "+f.devise.value:"-"),
+      "Message : "+(f.msg.value.trim()||"-"),"","Cordialement"].join("\n");
+    var href="mailto:"+MAILS+"?subject="+encodeURIComponent("Intention GDEM "+ref)+"&body="+encodeURIComponent(corps);
+    document.getElementById("ref-val").textContent=ref;
+    document.getElementById("ref-mail").setAttribute("href",href);
+    document.getElementById("ref-box").classList.add("visible");
+    window.location.href=href;
+  });
+  document.getElementById("ref-copier").addEventListener("click",function(){
+    var t=document.getElementById("ref-val").textContent,b=this;
+    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent="Référence copiée ✓"}).catch(function(){b.textContent=t});
+  });
+})();
+</script>
+
+<div class="barre-appel">
+  <a class="b1" href="tel:+212622699131">📞 Appeler</a>
+  <a class="b2" href="https://wa.me/212622699131" rel="noopener">WhatsApp</a>
+</div>
+</body>
+</html>
