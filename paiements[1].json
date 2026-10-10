@@ -1,0 +1,27 @@
+{
+  "_aide": "Pour activer un canal de paiement, collez son lien officiel dans le champ « url » (entre guillemets). Un canal sans lien reste masqué. Utilisez uniquement des comptes ouverts au nom du GDEM.",
+  "canaux": [
+    {
+      "id": "mobile_money",
+      "titre": "Mobile money",
+      "public": "Depuis Madagascar",
+      "description": "MVola, Orange Money ou Airtel Money, vers le compte marchand du GDEM.",
+      "bouton": "Payer par mobile money",
+      "url": ""
+    },
+    {
+      "id": "carte",
+      "titre": "Carte bancaire",
+      "public": "International et diaspora",
+      "description": "Paiement sécurisé sur la page de notre prestataire agréé. Aucune donnée de carte ne transite par ce site.",
+      "bouton": "Payer par carte",
+      "url": ""
+    }
+  ],
+  "virement": {
+    "beneficiaire": "",
+    "banque": "",
+    "iban_ou_rib": "",
+    "bic_swift": ""
+  }
+}
